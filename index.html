@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" onload="resize();">
+    <head>
+            <meta charset="utf-8">
+            <meta name="keywords" content="sighclone, tech, software, VIT, India, student, website, developer, portfolio, resume">
+            <meta name="description" content="Sighclone here! I am a student at VIT, Vellore and this is my personal portfolio/resume website.">
+
+            <title>Sighclone!</title>
+            
+            <!-- external CSS link -->
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/text.css">
+            <script type="text/javascript" src="JS/Control.js"></script>
+    </head>
+
+<div id="body">
+    <body onload="openFullscreen();">
+        <div id="head">
+            <span onclick="verifyFullscreen();">⇱</span>
+        </div>
+
+        <script>
+
+        </script>
+        <div id="createGap">
+            <head>|</head>
+        </div>
+        <div id="box">
+        <!-- START HERE -->
+            <h1>Sighclone!</h1>
+            Hey there!<br><br>
+            <div id="gettingStarted" class="gettingStarted">
+                -To open the menu, <span>click on the 🌪️ button below!</span>
+            </div>
+            <div id="getGoing" class="gettingStarted">
+                -This menu is how you <span>navigate around.</span>
+            </div>
+        <!-- END HERE --> 
+        </div>
+
+    </body>
+</div>
+
+<div id="taskbar">
+    <button id="StartBtn" class="StartButton" onclick="startMenuControl(); softwareListClose(); skillsListClose(); gettingStartedControl(); getGoingControl();">
+        🌪️
+    </button>
+</div>
+
+<div id="startMenu" class="startMenu">
+    <div class="startMenuTitle">
+        Main Menu
+    </div>
+    <button class="startMenuUnit" onclick="softwareListControl();skillsListClose();">
+        Softwares
+    </button>
+    <br>
+    <button class="startMenuUnit" onclick="softwareListClose();skillsListControl();">
+        Skills
+    </button><br>
+    <button class="startMenuUnit" onclick="startMenuControl();softwareListClose();skillsListClose();aboutControl();resetGS();">
+        About
+    </button><br>
+    <button class="startMenuUnit" onclick="location.reload();">
+        Reboot ⟳
+    </button><br>
+</div>
+
+<div id="softwareList" class="List">
+    <div class="startMenuTitle">Softwares</div>
+    <button id="listItem" class="listItem" onclick="startMenuControl();softwareListClose();TINControl();resetGS();">
+        View_TIN
+    </button>
+    <button id="listItem" class="listItem" onclick="startMenuControl();softwareListClose();zilminerGUIControl();resetGS();">
+        View_zilminerGUI
+    </button>
+    <button id="listItem" class="listItem" onclick="startMenuControl();softwareListClose();EasyThinkerControl();resetGS();">
+        View_EasyThinker
+    </button>
+    <button id="listItem" class="listItem" onclick="startMenuControl();softwareListClose();StudyDashControl();resetGS();">
+        View_StudyDash
+    <button id="listItem" class="listItem"  onclick="startMenuControl();softwareListClose();BruhBotControl();resetGS();">
+        View_BruhBot
+    </button>
+    <!---https://github.com/sighclone/EasyThinker-->
+
+</div>
+
+<div id="TIN" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closeTIN();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        TextInNotepad (TIN)
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+    <h4>What is TIN?</h4>
+        A python based computer malware that writes text into notepad.
+
+    <h4>What does TIN do?</h4>
+        TIN locks down the user's keyboard and forces the mouse position to (0, 0). Then it copies itself to the startup folder, followed by opening notepad and writing text in. TIN also has an anti Ctrl+Alt+Del system. TIN constantly checks if Task Manager is open and if it is opened, TIN will instantly shut the computer down.
+
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone/TextInNotepad" target="_blank">Click here</a> to open this project on github.
+    </div>
+</div>
+
+
+
+
+<div id="zilminerGUI" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closezilminerGUI();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        zilminerGUI (in-development)
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+    <h4>zilminerGUI</h4>
+        After 2019, zilminer stopped updates to the GUI. As a consequence, zilminer was no longer accepting the new wallet address format (that starts with zil...). Therefore, I have made zilminerGUI as an updated GUI for zilminer. zilminerGUI also remembers your previous session's setup and starts it for you!
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone/zilminerGUI/releases" target="_blank">Click here</a> to download this software.
+    </div>
+
+</div>
+
+<div id="EasyThinker" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closeEasyThinker();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        EasyThinker
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+    <h4>EasyThinker (In development)</h4>
+        EasyThinker is a software that helps you organise arguments and constructively make conclusions. EasyThinker can help in debates or in just making better decisions. EasyThinker has a free and a paid version, with the paid version having the ability to procedurally create videos from your construction.
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone/EasyThinker" target="_blank">Click here</a> to open this project on github.
+    </div>
+</div>
+
+<div id="footer">
+    <footer>Copyright ©️ 2021 <a href="https://github.com/sighclone" target="_blank">sighclone</a> </footer>
+</div>
+</html>
+
+<div id="StudyDash" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closeStudyDash();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        StudyDash
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+    <h4>StudyDash - Desktop Edition (For Windows 10)</h4>
+    StudyDash is a dashboard app for students that can help them keep focus and maintain a record of their assignments/other tasks with features like sync between devices (and between android-windows if required), a timer, a primary task that can be synced between devices, (partially) customisable background wallpaper, account management, quick access to useful tools, (partially) embedded other useful tools, decent security and account protection, offline storage of assignments.
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone/StudyDash-Desktop/releases/download/Important/Setup.exe" target="_blank">Click here</a> to download this software.
+        <br>
+        Or, <a href="https://github.com/sighclone/StudyDash-Desktop/" target="_blank">click here</a> to open this project on github.
+    </div>
+</div>
+
+<div id="BruhBot" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closeBruhBot();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        BruhBot (pre-production)
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+    <h4>BruhBot</h4>
+        A discord bot built in python that supports any message indicative of a bruh moment. The bot essentially scans a message for the word bruh and replies appropriately. This bot is still in pre-production. If you would like to add the bot to your server, please contact me for the same.
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        This project is not production ready, contact me (About section) to add it to your server.
+    </div>
+</div>
+
+<div id="skillsList" class="List">
+    <div class="startMenuTitle">Skills</div>
+    <button id="listItem" class="listItem" onclick="startMenuControl();skillsListClose();skillsControl();resetGS();">
+        View_Skills.exe
+    </button>
+</div>
+
+<div id="Skills" class="showcaseArea">
+    <button class="showcaseTitleClose" onclick="closeSkills();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        Skills
+    </div>
+    <br>
+    <br>
+    <div id="showcaseInfo" class="showcaseInfo">
+        <h4>Pure Programming Skills:</h4>
+        <div class="skillCategory">
+            Formal Education » Python, C, C++
+        </div>
+        <div class="skillCategory">
+            Self-Taught » VB.NET, C#, HTML, CSS, JavaScript, PowerShell Scripting
+        </div>
+        <h4>Graphic Design and Animation Skills:</h4>
+        <div class="skillCategory">
+            Self-Taught » Blender, Krita, GIMP
+        </div>
+        <h4>Game Development Skills:</h4>
+        <div class="skillCategory">
+            Self-Taught » Unreal Engine (C++), S2 ENGINE HD (Visual Scripting), RPG Maker VX Ace (2D, pixel-styled)
+        </div>
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone" target="_blank">Click here</a> to open my GitHub profile.
+    </div>
+
+</div>
+
+<div id="about" class="about">
+    <button class="showcaseTitleClose" onclick="closeAbout();"></button>
+    <button class="showcaseTitleExpand"></button>
+    <button class="showcaseTitleMinimise"></button>
+    <div id = "showcaseTitle" class="showcaseTitle">
+        About Me
+    </div>
+    <br>
+    <br>
+    <div id="aboutInfo" class="aboutInfo">
+    <h4>Who am I?</h4>
+      Abhinav Sadhu, 19, Male, lives in Bangalore, Karnataka, India. Studies Computer Science Engineering (CSE) at Vellore Institute of Technology, Vellore, Tamil Nadu, India.
+    <h4>Credits</h4>
+        I made this, but...<br><br>
+        Background image (gif) credits: <a href="https://giphy.com/dualvoidanima/">dualvoidanima</a><br>
+        Learning Resources: <a href="https://stackoverflow.com">stackoverflow</a>, <a href="https://www.w3schools.com/">W3Schools</a>, <a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a>, <a href="https://codepen.io/">CodePen</a>
+    <h4>Contact</h4>
+        University Mail: abhinav.2020@vitstudent.ac.in<br>
+        Work Mail: nottheotherside@gmail.com<br>
+        Instagram: @nottheotherside<br>
+        <h4>Website Meta</h4>
+    <table>
+        <tr>
+          <th>Property</th>
+          <th>Value(s)</th>
+          <th>Remarks</th>
+        </tr>
+        <tr>
+          <td>Version</td>
+          <td>1.0</td>
+          <td>Initial Release</td>
+        </tr>
+        <tr>
+          <td>Observed RAM usage</td>
+          <td>200MB ~ 275MB</td>
+          <td>This was my benchmark result</td>
+        </tr>
+        <tr>
+          <td>Copyright/License</td>
+          <td>GNU GPL v3</td>
+          <td><a href="https://github.com/sighclone/myWebsite" target="_blank"> Click </a> to open on GitHub</td>
+        </tr>
+        <tr>
+          <td>Built using</td>
+          <td>HTML, CSS, JS</td>
+          <td>Pure HTML, CSS and JS used, no add-ons</td>
+        </tr>
+        <tr>
+          <td>Ideal browsers</td>
+          <td>Chromium (and derived)</td>
+          <td>ex: Google Chrome, Brave, Edge</td>
+        </tr>
+        <tr>
+          <td>Ideal Display</td>
+          <td>1920x1080</td>
+          <td>1920x1080 on fullscreen mode is even better</td>
+        </tr>
+      </table>
+    </div>
+
+            
+    <div id="guthib" class="guthib">
+        <a href="https://github.com/sighclone/myWebsite" target="_blank">Click here</a> to open this project on github.
+    </div>
+</div>
+
+<div id="footer">
+    <footer>Copyright ©️ 2021 <a href="https://github.com/sighclone" target="_blank">sighclone</a> </footer>
+</div>
+</html>
+
+
+
