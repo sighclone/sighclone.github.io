@@ -26,8 +26,21 @@ function closeFullscreen() {
     }
 }
 
-function startMenuControl(){
+// GENERIC CONTROL FUNCTION FOR ANY ELEM
+function elemControl(elemID){
+  console.log("Control triggered by elem: "+elemID);
+  var x = document.getElementById(elemID);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+  else {
+    x.style.display = "block";
+  }
+}
 
+function startMenuControl(){
+    // all of these functions are now obsolete -> just get calling elem ID as parameter, the control logic is the same for all elems
+    // *new elements use the generic control function
     var x = document.getElementById("startMenu");
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -45,6 +58,25 @@ function softwareListControl(){
     else {
       x.style.display = "block";
     }
+}
+
+// GENERIC CLOSE FUNCTION FOR ALL ELEMENTS
+
+function elemClose(elemID){
+  var x= document.getElementById(elemID);
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  }
+}
+
+function elemToggle(elemID){
+  var x = document.getElementById(elemID);
+  if (x.style.display === "none") {
+  x.style.display = "block";
+  }
+  else {
+      x.style.display = "none";
+  }
 }
 
 function softwareListClose(){

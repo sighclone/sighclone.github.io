@@ -28,7 +28,8 @@
         </div>
         <div id="box">
         <!-- START HERE -->
-            <h1>Sighclone!</h1>
+            <p>Hey there! I am</p>
+            <h1>Abhinav Sadhu!</h1>
             Hey there!<br><br>
             <div id="gettingStarted" class="gettingStarted">
                 -To open the menu, <span>click on the 🌪️ button below!</span>
@@ -43,7 +44,7 @@
 </div>
 
 <div id="taskbar">
-    <button id="StartBtn" class="StartButton" onclick="startMenuControl(); softwareListClose(); skillsListClose(); gettingStartedControl(); getGoingControl();">
+    <button id="StartBtn" class="StartButton" onclick="elemControl('startMenu'); softwareListClose(); skillsListClose(); elemControl('gettingStarted'); elemControl('getGoing');">
         🌪️
     </button>
 </div>
@@ -52,14 +53,14 @@
     <div class="startMenuTitle">
         Main Menu
     </div>
-    <button class="startMenuUnit" onclick="softwareListControl();skillsListClose();">
+    <button class="startMenuUnit" onclick="elemControl('softwareList');skillsListClose();">
         Softwares
     </button>
     <br>
-    <button class="startMenuUnit" onclick="softwareListClose();skillsListControl();">
+    <button class="startMenuUnit" onclick="softwareListClose();elemControl('skillsList');">
         Skills
     </button><br>
-    <button class="startMenuUnit" onclick="startMenuControl();softwareListClose();skillsListClose();aboutControl();resetGS();">
+    <button class="startMenuUnit" onclick="elemControl('startMenu');softwareListClose();skillsListClose();elemControl('about');resetGS();">
         About
     </button><br>
     <button class="startMenuUnit" onclick="location.reload();">
