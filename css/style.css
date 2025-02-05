@@ -396,7 +396,7 @@ a{
 	margin-top: -21%;
 	margin-left: 40%;
 	width: 55%;
-	height: 700px;
+	height: 550px;
 	opacity: 97%;
 	border-radius: 15px;
 	display: none;
@@ -415,7 +415,7 @@ td{
 	color: white;
 	text-align: justify;
 	margin-right: 30px;
-	height: 85%;
+	height: 80%;
 	overflow-y: auto;
 	border-radius: 15px;
 }
